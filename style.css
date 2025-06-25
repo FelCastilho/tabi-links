@@ -37,12 +37,16 @@ a {
     overflow: hidden;
 }
 
-.link {
+.box-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 4px;
+    gap: 168px;
     position: relative;
-    padding-bottom: 8px;
 }
 
-.link::after {
+.box-link::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -50,19 +54,11 @@ a {
     width: 0%;
     height: 2px;
     background-color: #F20C25;
-    transition: width 0.4s ease;
+    transition: width .4s ease;
 }
 
-.link:hover::after {
+.box-link:hover::after {
     width: 100%;
-}
-
-.box-link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 8px 4px;
-    gap: 168px;
 }
 
 p {
